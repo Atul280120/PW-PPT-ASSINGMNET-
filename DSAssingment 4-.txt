@@ -1,0 +1,162 @@
+Assingment 4-
+
+1. The purpose of the General Linear Model (GLM) is to analyze the relationship between a dependent variable and one or more independent variables, while considering the effects of covariates and controlling for confounding factors.
+
+2. The key assumptions of the General Linear Model include linearity (the relationship between the dependent variable and predictors is linear), independence of errors (residuals are not correlated), homoscedasticity (constant variance of errors), and normal distribution of errors.
+
+3. In a GLM, the coefficients represent the change in the mean value of the dependent variable for a one-unit change in the corresponding independent variable, assuming all other variables are held constant.
+
+4. A univariate GLM involves a single dependent variable and one or more independent variables, while a multivariate GLM involves multiple dependent variables and one or more independent variables.
+
+5. Interaction effects in a GLM occur when the relationship between one independent variable and the dependent variable varies depending on the level of another independent variable. It indicates that the effect of one variable on the dependent variable is dependent on the level of another variable.
+
+6. Categorical predictors in a GLM are typically represented using dummy variables or indicator variables. Each category is represented by a separate binary variable, indicating the presence or absence of that category.
+
+7. The design matrix in a GLM is a matrix that represents the relationship between the dependent variable and the independent variables. It includes the values of the predictors and covariates for each observation.
+
+8. The significance of predictors in a GLM can be tested using hypothesis tests such as t-tests or F-tests. These tests examine whether the coefficients are significantly different from zero, indicating whether the predictors have a significant effect on the dependent variable.
+
+9. Type I, Type II, and Type III sums of squares are different methods for partitioning the total sum of squares into components associated with each predictor in a GLM. Type I sums of squares assess the unique contribution of each predictor, while Type II and Type III sums of squares account for the presence of other predictors in the model.
+
+10. Deviance in a GLM is a measure of the difference between the observed data and the predicted values from the model. It is used for model comparison, goodness-of-fit assessment, and hypothesis testing in the context of maximum likelihood estimation.
+
+11. Regression analysis is a statistical technique used to model the relationship between a dependent variable and one or more independent variables. Its purpose is to understand how changes in the independent variables relate to changes in the dependent variable.
+
+12. Simple linear regression involves modeling the relationship between a single independent variable and a dependent variable. Multiple linear regression involves modeling the relationship between multiple independent variables and a dependent variable.
+
+13. R-squared (coefficient of determination) in regression represents the proportion of the variance in the dependent variable that can be explained by the independent variables. It provides a measure of how well the regression model fits the data.
+
+14. Correlation measures the strength and direction of the linear relationship between two variables, while regression focuses on modeling the dependent variable using one or more independent variables to understand the relationship and make predictions.
+
+15. The coefficients in regression represent the estimated change in the dependent variable associated with a one-unit change in the corresponding independent variable, assuming all other variables are held constant. The intercept represents the estimated value of the dependent variable when all independent variables are zero.
+
+16. Outliers in regression analysis can be handled by identifying and removing them, transforming the data, or using robust regression techniques that are less sensitive to outliers.
+
+17. Ridge regression is a regularization technique that adds a penalty term to the ordinary least squares regression objective function to address multicollinearity and reduce the impact of high-variance predictors. Ordinary least squares regression does not introduce a penalty term.
+
+18. Heteroscedasticity in regression refers to the situation where the variance of the errors or residuals is not constant across different levels of the independent variables. It can affect the model's assumptions and result in biased or inefficient parameter estimates.
+
+19. Multicollinearity in regression occurs when there is a high correlation between independent variables, making it difficult to assess the individual effects of predictors. It can be handled by removing correlated variables, using dimension reduction techniques, or employing regularization methods.
+
+20. Polynomial regression is a form of regression analysis that models the relationship between the dependent variable and the independent variables as an nth-degree polynomial. It is used when the relationship between the variables is nonlinear and can capture more complex patterns in the data.
+
+21. A loss function measures the error or discrepancy between the predicted values and the true values of the target variable in a machine learning model. Its purpose is to guide the optimization process and find the best set of model parameters.
+
+22. A convex loss function has a single global minimum, and any local minimum is also the global minimum. A non-convex loss function may have multiple local minima, making it more challenging to optimize.
+
+23. Mean squared error (MSE) is a common loss function that measures the average squared difference between the predicted and true values of the target variable. It is calculated by taking the average of the squared residuals.
+
+24. Mean absolute error (MAE) is a loss function that measures the average absolute difference between the predicted and true values of the target variable. It is calculated by taking the average of the absolute residuals.
+
+25. Log loss, also known as cross-entropy loss, is a loss function commonly used in classification problems. It measures the difference between the predicted probabilities and the true labels. It is calculated by taking the negative logarithm of the predicted probability for the true class.
+
+26. The choice of the appropriate loss function depends on the specific problem, the nature of the data, and the desired properties of the model. Mean squared error is often used for regression problems, while log loss is commonly used for binary classification.
+
+27. Regularization in the context of loss functions introduces a penalty term that discourages complex models by adding a cost for large parameter values. It helps prevent overfitting and improves the model's generalization ability.
+
+28. Huber loss is a loss function that is less sensitive to outliers compared to squared loss (MSE) or absolute loss (MAE). It combines the benefits of both loss functions by using a squared loss for small errors and an absolute loss for large errors.
+
+29. Quantile loss, also known as pinball loss, is a loss function used in quantile regression. It measures the difference between the predicted quantiles and the true quantiles of the target variable. It is useful when modeling the conditional distribution of a variable.
+
+30. Squared loss (MSE) penalizes larger errors more than absolute loss (MAE). Squared loss gives higher weight to outliers and results in larger residuals for extreme errors, while absolute loss treats all errors equally.
+
+31. An optimizer is an algorithm or method used to find the optimal values of the model parameters by minimizing the loss function. Its purpose is to update the model's parameters iteratively to improve the model's performance.
+
+32. Gradient Descent (GD) is an optimization algorithm used to find the minimum of a loss function by iteratively adjusting the model parameters in the direction of steepest descent. It calculates the gradients of the loss function with respect to the parameters and updates the parameters based on the gradients and a learning rate.
+
+33. Different variations of Gradient Descent include Batch Gradient Descent, Mini-Batch Gradient Descent, and Stochastic Gradient Descent. Batch GD calculates the gradients using the entire training dataset, Mini-Batch GD uses a subset of
+
+ the training data, and Stochastic GD calculates the gradients for each training sample.
+
+34. The learning rate in GD determines the step size by which the parameters are updated in each iteration. Choosing an appropriate learning rate is crucial, as a too small value may result in slow convergence, while a too large value may cause instability or divergence.
+
+35. GD can get stuck in local optima if the loss function is non-convex. Techniques such as initializing the parameters with different values or using advanced optimization algorithms can help overcome this issue.
+
+36. Stochastic Gradient Descent (SGD) is a variation of GD where the gradients are calculated and the parameters are updated for each individual training sample. It is computationally efficient but can result in noisy updates compared to batch GD or mini-batch GD.
+
+37. The batch size in GD determines the number of training samples used to calculate the gradients and update the parameters in each iteration. A larger batch size provides a more accurate estimate of the gradients but requires more computational resources.
+
+38. Momentum in optimization algorithms adds a fraction of the previous parameter update to the current update. It helps accelerate convergence by dampening oscillations and enabling faster progress in the relevant directions.
+
+39. Batch GD uses the entire training dataset to calculate the gradients and update the parameters. Mini-Batch GD uses a subset or batch of training samples, while SGD uses a single training sample at a time. The choice depends on the size of the dataset, computational resources, and the balance between accuracy and efficiency.
+
+40. The learning rate affects the convergence of GD. A larger learning rate can result in faster convergence but may cause instability or overshooting the optimal solution. A smaller learning rate can provide more stability but may lead to slower convergence.
+
+41. Regularization is a technique used to prevent overfitting in machine learning models by adding a penalty term to the loss function. It discourages complex models and encourages simpler models that generalize well to unseen data.
+
+42. L1 regularization adds the absolute values of the parameter coefficients as a penalty term to the loss function. L2 regularization adds the squared values of the parameter coefficients. L1 regularization encourages sparsity and feature selection, while L2 regularization encourages shrinkage towards zero.
+
+43. Ridge regression is a regularization technique that adds an L2 penalty term to the ordinary least squares regression objective function. It helps reduce the impact of multicollinearity and prevents overfitting by shrinking the parameter estimates towards zero.
+
+44. Elastic Net regularization combines L1 and L2 penalties in the regularization term. It can simultaneously perform variable selection and handle multicollinearity by finding a balance between sparsity and shrinkage.
+
+45. Regularization helps prevent overfitting in machine learning models by adding a penalty for complex models. It reduces the model's reliance on noisy or irrelevant features and encourages it to focus on the most important features that contribute to the target variable.
+
+46. Early stopping is a regularization technique where the model training is stopped early based on the performance on a validation set. It helps prevent overfitting by finding the point where the model's performance on the validation set starts to degrade.
+
+47. Dropout regularization is a technique commonly used in neural networks. It randomly sets a fraction of the neural network units to zero during each training iteration, forcing the network to learn more robust and generalized features.
+
+48. The regularization parameter in a model determines the amount of regularization applied. It is typically chosen through techniques like cross-validation, grid search, or other optimization methods to find the best balance between model complexity and performance.
+
+49. Feature selection focuses on selecting a subset of relevant features based on their importance or contribution to the model's performance. Regularization techniques, on the other hand, shrink the coefficients of less important features towards zero but do not remove them entirely.
+
+50. The trade-off between bias and variance in regularized models involves finding the right amount of regularization to balance the model's bias (underfitting) and variance (overfitting). A higher regularization parameter increases bias and reduces variance, while a lower parameter value increases variance and reduces bias.
+
+51. Support Vector Machines (SVM) is a supervised machine learning algorithm used for both classification and regression tasks. It aims to find the optimal hyperplane that maximally separates different classes or fits the data in regression.
+
+52. The kernel trick in SVM allows the algorithm to operate in a higher-dimensional feature space without explicitly computing the transformations. It enables SVM to learn complex nonlinear decision boundaries.
+
+53. Support vectors in SVM are the data points that lie closest to the decision boundary (hyperplane). They play a crucial role in defining the decision boundary and determining the margin.
+
+54. The margin in SVM is the distance between the decision boundary and the closest support vectors. It represents the separation or generalization capacity of the model. A wider margin indicates better generalization, while a narrower margin may lead to overfitting.
+
+55. Unbalanced datasets in SVM can be handled by adjusting the class weights, using different cost functions, undersampling the majority class, oversampling the minority class, or using advanced techniques like SMOTE (Synthetic Minority Over-sampling Technique).
+
+56. Linear SVM finds a linear decision boundary that separates the classes, while non-linear SVM uses kernel functions to transform the data into a higher-dimensional feature space, where a linear decision boundary can separate the classes.
+
+57. The C-parameter in SVM controls the trade-off between maximizing the margin and allowing misclassifications. A smaller C-value creates a wider margin and allows more misclassifications, while a larger C-value results in a narrower margin but enforces stricter classification.
+
+58. Slack variables in SVM allow for soft margins by allowing some misclassifications within a certain tolerance. They help handle cases where a linear decision boundary cannot perfectly separate the classes.
+
+59. Hard margin SVM aims to find a decision boundary that perfectly separates the classes, without allowing any misclassifications. Soft margin SVM allows for a certain number of misclassifications to account for noisy or overlapping data.
+
+60. The coefficients in an SVM model represent the importance of the respective features in determining the decision boundary. They indicate the direction and magnitude of the feature's contribution to the classification or regression task.
+61. A decision tree is a supervised machine learning algorithm that uses a tree-like structure to model decisions or predictions based on feature values. It works by recursively partitioning the data based on feature thresholds to create a tree of nodes and branches.
+
+62. Splits in a decision tree are made by selecting the best feature and threshold that maximize the separation or information gain in the target variable. The goal is to create homogeneous subsets of data at each node.
+
+63. Impurity measures such as the Gini index or entropy are used in decision trees to quantify the homogeneity or impurity of a set of data. They help determine the optimal splits by measuring the gain in purity achieved by a particular split.
+
+64. Information gain in decision trees represents the reduction in impurity achieved by splitting the data based on a specific feature and threshold. It is calculated as the difference between the impurity of the parent node and the weighted impurity of the child nodes.
+
+65. Missing values in decision trees can be handled by different techniques such as assigning the majority class value, imputing with mean or median, or using algorithms that can handle missing values directly.
+
+66. Pruning in decision trees is a technique used to prevent overfitting by removing or collapsing nodes that do not significantly improve the tree's predictive accuracy. It helps simplify the tree and improve its generalization ability.
+
+67. A classification tree is used for predicting categorical or discrete target variables, where each leaf node represents a class label. A regression tree is used for predicting continuous or numeric target variables, where each leaf node represents a predicted value.
+
+68. The decision boundaries in a decision tree are determined by the splits at each node. They separate the feature space into regions or segments based on the feature thresholds, guiding the predictions or classifications.
+
+69. Feature importance in decision trees quantifies the relative importance of each feature in making predictions. It is calculated based on how often a feature is used for splits and the improvement in impurity achieved by those splits.
+
+70. Ensemble techniques combine multiple decision trees to improve the overall performance and robustness of the model. They include methods such as random forests, gradient boosting, and AdaBoost, where each tree is trained on different subsets of data or with different weights.
+
+71. Ensemble techniques in machine learning combine multiple models to obtain better predictive performance than using a single model alone. They leverage the diversity and collective wisdom of the individual models to make more accurate predictions.
+
+72. Bagging (bootstrap aggregating) is an ensemble technique where multiple models are trained on different bootstrap samples of the training data. Each model provides a prediction, and the final prediction is obtained by aggregating the predictions of all models.
+
+73. Bootstrapping in bagging involves sampling the training data with replacement to create multiple bootstrap samples. Each sample has the same size as the original dataset, but some instances may appear multiple times, while others may be left out.
+
+74. Boosting is an ensemble technique where multiple weak models (typically decision trees) are trained sequentially. Each subsequent model focuses on the instances that were misclassified by previous models, aiming to correct their errors and improve overall accuracy.
+
+75. AdaBoost (Adaptive Boosting) is a boosting algorithm where each weak model is assigned a weight based on its performance. Models with higher weights have more influence on the final prediction. It iteratively adjusts the weights to focus on difficult instances.
+
+76. Random forests are an ensemble technique that combines multiple decision trees trained on different subsets of features and data. The final prediction is obtained by aggregating the predictions of individual trees through voting (classification) or averaging (regression).
+
+77. Random forests estimate feature importance based on the average decrease in impurity (e.g., Gini index) resulting from splits using a particular feature. Features with higher average impurity decrease are considered more important.
+
+78. Stacking is an ensemble technique where the predictions of multiple models are combined using another model, called a meta-model. The meta-model learns to combine the predictions of the base models to make the final prediction.
+
+79. The advantages of ensemble techniques include improved predictive performance, robustness against overfitting, and the ability to handle complex relationships in the data. They are also less sensitive to outliers and noisy data compared to individual models.
+
+80. The optimal number of models in an ensemble depends on the specific problem, dataset size, and computational resources. Increasing the number of models generally improves performance up to a certain point, after which further additions may lead to diminishing returns or increased complexity.
